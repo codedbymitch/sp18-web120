@@ -1,0 +1,234 @@
+/* My WEB120 Portal Website Styles */
+
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+
+body {
+    
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
+
+section.form {
+    background-image: url('http://codedbymitch.com/web120/fp/images/interior.jpg')
+}
+
+div.wrapper {
+    background-color:#fff;
+    overflow:auto;
+     background-color:#fff;
+    width:90%;
+    margin:auto;
+   
+    
+}
+
+h1 {
+    
+    background-color: ;
+    margin: 5px;
+    height: 125px;
+   
+}
+
+h1>a {
+    height: 40px;
+    width: 100%
+    
+       }
+
+h1>a>img {
+    
+    padding-top: 22px;
+}
+
+header{
+    width: 100%;
+text-align:center;
+    
+   }
+
+
+
+img {
+    display:block;
+margin: auto;
+    text-align: center;
+        background-color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    
+    
+}
+
+h2   {
+    
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Latobold';
+    color: #000;
+}
+
+h2:after {
+    display: block;
+    clear: both;
+    content: "";
+    position: relative;
+    left: 0;
+    bottom: 0;
+    max-width: 200px;
+    height: auto;
+    width: 100%;
+    border: none;
+    right: 0;
+    margin: 0 ;
+}
+
+#container {
+  height: 125px;
+  text-align: justify;
+  border: 10px solid black;
+  font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
+  min-width: auto;
+   
+}
+#container div {
+  width: 150px;
+  height: 125px;
+  display: inline-block;
+  background: red;
+}
+#container:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+center.section {
+     background-color:#fff;
+    width:80%;
+    margin:auto;
+    overflow:auto;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+
+}
+
+
+footer {
+	clear:both;
+}
+
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+   div.wrapper {
+		width:100%;
+		margin:auto;
+	}
+
+    section {
+		width:100%;
+		float:center;
+	}
+	
+ 
+	
+    img.desktop {
+      		float:center;
+       		width:100%;
+   	 }
+    
+    img.tablet, img.phone {
+       		 display:none;
+    	}  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #ccc;
+        color:#000;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+	
+
+	
+	aside {	
+		width:39%;
+		float:right;
+	}
+	
+    img.tablet {
+    width:100%;
+    }
+    
+    img.phone, img.desktop {
+    display:none;
+    } 
+    
+    /* Change background color of navigation on selected page */
+        ul.topnav li a.selected {
+        background-color: #ccc;
+        color:#000;
+        }
+  }
+
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    img.phone {
+       	width:100%;
+    }
+    
+    img.tablet, img.desktop {
+        display:none;
+    }  
+
+}
